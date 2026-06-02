@@ -33,6 +33,14 @@ subscribe(APP_INIT_ERROR, (error) => {
   );
 });
 
+
+
+const DEFAULT_LOCALE = 'fr'; // or 'en', 'ar', 'es-419', etc.
+const LANGUAGE_COOKIE_NAME = 'openedx-language-preference';
+
+// Enforce language before frontend-platform initializes i18n
+document.cookie = `${LANGUAGE_COOKIE_NAME}=${DEFAULT_LOCALE}; path=/; max-age=31536000; SameSite=Lax`;
+
 initialize({
   handlers: {
     config: () => {
