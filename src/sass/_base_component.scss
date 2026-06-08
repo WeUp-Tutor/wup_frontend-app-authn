@@ -2,24 +2,64 @@
 .layout {
   display: flex;
 
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+
+    background: url("https://hexafret.koa.qualif.dev/static/hexafret/images/hexafret_banner.jpg")center center / cover no-repeat;
+
   @media (--pgn-size-breakpoint-max-width-lg) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-
+  /*
   @media (--pgn-size-breakpoint-min-width-xl) {
     justify-content: space-between;
   }
+    */
+}
+/*
+.btn-brand{
+
+  --pgn-btn-bg: #007a47;
+  --pgn-btn-border-color:#005833;
+  --pgn-btn-color: #fff;
+  --pgn-btn-hover-color:#fff;
+  --pgn-btn-hover-bg:#005833;
+  --pgn-btn-hover-border-color:#005833;
+  --pgn-btn-disabled-color:#919191;
+  --pgn-btn-disabled-bg:#005833;
+  --pgn-btn-disabled-border-color:#005833;
+  --pgn-btn-active-color:#005833;
+  --pgn-btn-active-bg:#005833;
+  --pgn-btn-active-border-color:#007a47;
+  --pgn-btn-focus-outline-color:#00a560;
+  --pgn-btn-focus-color:#ffffff;
+  --pgn-btn-focus-border-color:#00a560; 
+  --pgn-btn-focus-bg:#00a560;
 }
 
+:root{
+  --pgn-color-primary-500:#007a47;
+}
+  */
 .content {
   @media (--pgn-size-breakpoint-min-width-xl) {
     display: flex;
     justify-content: center;
-    width: 50vw;
+
     margin-top: 4rem;
   }
+
+  padding: 3em;
+  border-radius: 50px 0;
+  background-color:rgb(255, 255, 255);
+
 }
 
 .logo-small {
@@ -87,9 +127,9 @@
   height: 0.25rem;
   background-image: linear-gradient(
     102.02deg,
-    var(--pgn-color-brand-700),
-    var(--pgn-color-brand-700) 20%,
-    var(--pgn-color-brand-base) 20%,
+    #006f41,
+    #006f41 20%,
+    #007a47 20%,
   );
   background-repeat: no-repeat;
 }
@@ -100,10 +140,10 @@
     height: 0.5rem;
     background-image: linear-gradient(
       102.02deg,
-      var(--pgn-color-brand-700),
-      var(--pgn-color-brand-700) 10%,
-      var(--pgn-color-brand-base) 10%,
-      var(--pgn-color-brand-base) 90%,
+      #006f41,
+      #006f41 10%,
+      #007a47 10%,
+      #007a47 90%,
       var(--pgn-color-primary-700) 90%,
       var(--pgn-color-primary-700) 100%,
     );
@@ -117,9 +157,9 @@
     height: 0.5rem;
     background-image: linear-gradient(
       102.02deg,
-      var(--pgn-color-brand-700) 10%,
-      var(--pgn-color-brand-base) 10%,
-      var(--pgn-color-brand-base) 65%,
+      #006f41 10%,
+      #007a47 10%,
+      #007a47 65%,
       var(--pgn-color-primary-700) 65%,
       var(--pgn-color-primary-700) 75%,
       var(--pgn-color-accent-a) 75%,
@@ -137,9 +177,9 @@
    height: 0.5rem;
    background-image: linear-gradient(
      102.02deg,
-     var(--pgn-color-brand-700) 10%,
-     var(--pgn-color-brand-base) 10%,
-     var(--pgn-color-brand-base) 45%,
+     #006f41 10%,
+     #007a47 10%,
+     #007a47 45%,
      var(--pgn-color-primary-700) 45%,
      var(--pgn-color-primary-700) 55%,
      var(--pgn-color-accent-a) 55%,
